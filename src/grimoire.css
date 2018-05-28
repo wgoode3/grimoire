@@ -11,134 +11,138 @@
 /* Variables can be changed here */
 :root {
 
-	/* Colors are here */
-	/* Patchouli Primary (Purple) */
-	--primary: #7B4283;
+    /* Colors are here */
+    /* Patchouli Primary (Purple) */
+    --primary: #7B4283;
 
-	/* Marisa Secondary (Yellow) */
-	--secondary: #F0FF00;
+    /* Marisa Secondary (Yellow) */
+    --secondary: #FFBA00;
 
-	/* Satori Tertiary (Pink) */
-	--tertiary: #D185A6;
+    /* Satori Tertiary (Pink) */
+    --tertiary: #D185A6;
 
-	/* Reimu Danger (Red) */
-	--danger: #E90000; 
+    /* Reimu Danger (Red) */
+    --danger: #E90000; 
 
-	/* Utsuho Caution (Orange-ish) */
-	--caution: #ED9755;
+    /* Utsuho Caution (Orange-ish) */
+    --caution: #ED9755;
 
-	/* Keine Info (Light Blue) */
-	--info: #89AAFF;
+    /* Keine Info (Light Blue) */
+    --info: #89AAFF;
 
-	/* Tenshi Link (Blue) */
-	--link: #0073C1;
+    /* Tenshi Link (Blue) */
+    --link: #0073C1;
 
-	/* Sanae Success (Green) */
-	--success: #58B675;
+    /* Sanae Success (Green) */
+    --success: #58B675;
 
-	/* Momiji White (White) */
-	--white: #FFFFFF;
+    /* Momiji White (White) */
+    --white: #FFFFFF;
 
-	/* Youmu Light (Very Light Grey) */
-	--light: #F3F3F3;
+    /* Youmu Light (Very Light Grey) */
+    --light: #F3F3F3;
 
-	/* Sakuya Silver (Light Grey) */
-	--silver: #BCBCCC;
+    /* Sakuya Silver (Light Grey) */
+    --silver: #BCBCCC;
 
-	/* Nazrin Grey (Grey) */
-	--grey: #878E92;
+    /* Nazrin Grey (Grey) */
+    --grey: #878E92;
 
-	/* Aya Dark (Dark Grey) */
-	--dark: #252527;
+    /* Aya Dark (Dark Grey) */
+    --dark: #252527;
 
-	/* Rumia Black (No light) */
-	--black: #000000;
+    /* Rumia Black (No light) */
+    --black: #000000;
 
-	/* Sizes of things */
-	/* Border radii */
-	--pointyish: 0.1em;
-	--roundish: 0.2em;
+    /* Shadow (for use with box-shadow) */
+    --shadow: #999999;
 
-	/* Navbar height */
-	--nav: 40px;
+    /* Sizes of things */
+    /* Border radii */
+    --pointyish: 0.1em;
+    --roundish: 0.2em;
 
-	/* Somewhat important container height*/
-	--container: 1200px;
+    /* Grid System Gutter Size */
+    --gutter: 0.2rem;
 
-	/* Breakpoints for media queries */
-	--small: 480px;
-	--phone: 720px;
-	--tablet: 960px;
-	--laptop: 1280px;
-	--desktop: 1520px;
+    /* Navbar height */
+    --nav: 40px;
+
+    /* Somewhat important container width*/
+    --container: 1200px;
 
 }
 
-/* Simple CSS Reset */
+/* Some CSS Reset */
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 caption, th, td {
-	text-align: left;
-	vertical-align: top;
-	font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
 }
 
 fieldset, img { 
-	border: 0; 
+    border: 0; 
 }
 
 input, textarea, select, button {
-	font-size: 1.2rem;
-	padding: 0 0.1rem;
-	line-height: 1.2;
+    font-size: 1.1em;
+    padding: 0.1em 0.2em;
+    line-height: 1.1;
 }
 
 label {
-	font-size: 1.1rem;
-	line-height: 1.1;
+    font-size: 1.1rem;
+    line-height: 1.1;
 }
 
 abbr, acronym {
-	border-bottom: .1rem dotted;
-	cursor: help;
+    border-bottom: .1rem dotted;
+    cursor: help;
 }
 
 /* Prevents default browser style effects when clicking on buttons or inputs */
 *:active, *:focus {
-	outline: none !important;
-	box-shadow: none;
+    outline: none !important;
+    box-shadow: none;
 }
 
 /* Default Styling for many elements */
 
 body {
-	font-weight: 400;
-	line-height: 1.5;
-	/*background-color: var(--light);*/
+    font-weight: 400;
+    line-height: 1.5;
+    /*background-color: var(--light);*/
 }
 
 input {
-	border-radius: var(--pointyish) !important;
+    border-radius: var(--pointyish) !important;
 }
 
 button, input[type=submit], input[type=reset], input[type=button] {
-	border-radius: var(--roundish) !important;
-	background-color: var(--light);
-	border: 2px solid var(--silver) !important;
+    border-radius: var(--roundish) !important;
+    background-color: var(--light);
+    border: 1px solid var(--silver);
+    cursor: pointer !important;
+}
+
+button:active, input[type=submit]:active, input[type=reset]:active, input[type=button]:active {
+    box-shadow: 0 0 4px var(--black);
 }
 
 /*
@@ -158,151 +162,199 @@ button, input[type=submit], input[type=reset], input[type=button] {
 
  /* The container class */
  .container {
- 	width: 100%;
-	max-width: var(--container);
-	margin: 0 auto;
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    min-height: 100vh;
  }
 
- /* Custom grid */
+ /* Custom grid start */
 .row {
-	width: 100%;
-	max-width: var(--container);
+    width: 100%;
+    max-width: var(--container);
 }
 
 .row:before, .row:after {
     content:"";
-    display: table ;
-    clear:both;
+    display: table;
+    clear: both;
 }
 
 [class*='col-'] {
     float: left;
     min-height: 1px;
     width: calc(100% / 12);
+    margin: var(--gutter);
 }
 
-.col-1 {
-	width: calc(100% / 12 * 1);
-}
-
-.col-2 {
-	width: calc(100% / 12 * 2);
-}
-
-.col-3 {
-	width: calc(100% / 12 * 3);
-}
-
-.col-4 {
-	width: calc(100% / 12 * 4);
-}
-
-.col-5 {
-	width: calc(100% / 12 * 5);
-}
-
-.col-6 {
-	width: calc(100% / 12 * 6);
-}
-
-.col-7 {
-	width: calc(100% / 12 * 7);
-}
-
-.col-8 {
-	width: calc(100% / 12 * 8);
-}
-
-.col-9 {
-	width: calc(100% / 12 * 9);
-}
-
-.col-10 {
-	width: calc(100% / 12 * 10);
-}
-
-.col-11 {
-	width: calc(100% / 12 * 11);
-}
-
-.col-12 {
-	width: calc(100% / 12 * 12);
-}
+/* Abusing calc to make my columns the right sizes */
+.col-1  { width: calc(100% / 12 * 1  - calc(var(--gutter) * 2)); }
+.col-2  { width: calc(100% / 12 * 2  - calc(var(--gutter) * 2)); }
+.col-3  { width: calc(100% / 12 * 3  - calc(var(--gutter) * 2)); }
+.col-4  { width: calc(100% / 12 * 4  - calc(var(--gutter) * 2)); }
+.col-5  { width: calc(100% / 12 * 5  - calc(var(--gutter) * 2)); }
+.col-6  { width: calc(100% / 12 * 6  - calc(var(--gutter) * 2)); }
+.col-7  { width: calc(100% / 12 * 7  - calc(var(--gutter) * 2)); }
+.col-8  { width: calc(100% / 12 * 8  - calc(var(--gutter) * 2)); }
+.col-9  { width: calc(100% / 12 * 9  - calc(var(--gutter) * 2)); }
+.col-10 { width: calc(100% / 12 * 10 - calc(var(--gutter) * 2)); }
+.col-11 { width: calc(100% / 12 * 11 - calc(var(--gutter) * 2)); }
+.col-12 { width: calc(100% / 12 * 12 - calc(var(--gutter) * 2)); }
+/* Custom grid end */
 
 .is-primary {
-	background-color: var(--primary) !important;
-	color: #FFF;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #FFF;
 }
 
 .is-secondary {
-	background-color: var(--secondary) !important;
-	color: #000;
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    color: #000;
 }
 
 .is-tertiary {
-	background-color: var(--tertiary) !important;
-	color: #000;
+    background-color: var(--tertiary) !important;
+    border-color: var(--tertiary) !important;
+    color: #000;
 }
 
 .is-dangerous {
-	background-color: var(--danger) !important;
-	color: #FFF;
+    background-color: var(--danger) !important;
+    border-color: var(--danger) !important;
+    color: #FFF;
 }
 
 .is-caution {
-	background-color: var(--caution) !important;
-	color: #FFF;
+    background-color: var(--caution) !important;
+    border-color: var(--caution) !important;
+    color: #FFF;
 }
 
 .is-info {
-	background-color: var(--info) !important;
-	color: #000;
+    background-color: var(--info) !important;
+    border-color: var(--info) !important;
+    color: #000;
 }
 
 .is-link {
-	background-color: var(--link) !important;
-	color: #FFF;
+    background-color: var(--link) !important;
+    border-color: var(--link) !important;
+    color: #FFF;
 }
 
 .is-successful {
-	background-color: var(--success) !important;
-	color: #FFF;
+    background-color: var(--success) !important;
+    border-color: var(--success) !important;
+    color: #FFF;
 }
 
 .is-white {
-	background-color: var(--white) !important;
-	color: #000;
+    background-color: var(--white) !important;
+    color: #000;
 }
 
 .is-light {
-	background-color: var(--light) !important;
-	color: #000;
+    background-color: var(--light) !important;
+    color: #000;
 }
 
 .is-silver {
-	background-color: var(--silver) !important;
-	color: #000;
+    background-color: var(--silver) !important;
+    color: #000;
 }
 
 .is-grey {
-	background-color: var(--grey) !important;
-	color: #FFF;
+    background-color: var(--grey) !important;
+    border-color: var(--grey) !important;
+    color: #FFF;
 }
 
 .is-dark {
-	background-color: var(--dark) !important;
-	color: #FFF;
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+    color: #FFF;
 }
 
 .is-black {
-	background-color: var(--black) !important;
-	color: #FFF;
+    background-color: var(--black) !important;
+    border-color: var(--black) !important;
+    color: #FFF;
 }
 
 .lighten {
-	filter: brightness(150%);
+    filter: brightness(150%);
 }
 
 .darken {
-	filter: brightness(50%);
+    filter: brightness(50%);
 }
+
+/* media queries can hang out down here */
+/* Phone size breakpoint */
+@media only screen and (max-width: 760px) {
+    [class*='col-'] { width: calc(100% - calc(var(--gutter) * 2)); }
+}
+
+/* Bigger Phone size breakpoint */
+@media only screen and (min-width: 761px) {
+    .container { --container: 800px; }
+}
+
+/* Tablet size breakpoint */
+@media only screen and (min-width: 960px) {
+    .container { --container: 1000px; }
+}
+
+/* Laptop size breakpoint */
+@media only screen and (min-width: 1280px) {
+    .container { --container: 1200px; }
+}
+
+/* Desktop size breakpoint */
+@media only screen and (min-width: 1520px) {
+    .container { --container: 1400px; }
+}
+
+/*
+ * TODO:
+ *
+ * form
+ * alert (with burn in effect)
+ * table
+ * navbar (ribbon?)
+ * spell-card
+ * magic-circle (with border image)
+ * alchemy (media) (pinned class, )
+ * talisman (chip)
+ * polygonal round buttons
+ * tooltips
+ *
+ */
+
+.cover {
+    position: relative;
+    font-size: 2em;
+    min-height: 100px;
+    padding: 50px;
+    margin-bottom: var(--gutter); 
+}
+
+.cover:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid gold;
+    border-radius: var(--roundish);
+}
+
+.cover * {
+    position: relative;
+    z-index: 2;
+}
+

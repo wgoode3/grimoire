@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<style type="text/css">
 		.test {
-			background-color: var(--info);
+			background-color: silver;
 			height: 50px;
 			margin-top: 0.5%;
 		}
@@ -15,12 +15,17 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Hello</h1>
+		
+		<div class="cover is-primary">
+			<h1>Hello</h1>
+			<p>This is an example of Grimoire <button class="is-secondary">Start now!</button></p>
+		</div>
 
 		<label>Test:</label>
 		<input type="text">
 		<input type="submit" class="is-successful">
 		<button class="is-dangerous">Cancel</button>
+		<button>Unstyled</button>
 
 		<div class="row">
 			<div class="col-4 test is-primary"></div>
