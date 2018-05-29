@@ -85,6 +85,10 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
 }
 
+strong {
+    font-weight: bold !important;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -202,7 +206,7 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
 .is-tertiary {
     background-color: var(--tertiary) !important;
     border-color: var(--tertiary) !important;
-    color: #000;
+    color: #FFF;
 }
 
 .is-dangerous {
