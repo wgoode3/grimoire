@@ -1,196 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Grimoire Test</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<style type="text/css">
-		section {
-			padding: 100px 0px;
-			border-bottom: 1px solid #999;
-		}
-		summary {
-			margin-top: 10px;
-			border-top: 1px solid #999;
-			border-bottom: 1px solid #999;
-			background-color: #f3f3f3;
-			padding: 10px;
-		}
-		.title {
-			font-size: 2rem;
-		}
-		.code {
-			font-family: "Lucida Console", Monaco, monospace;
-			white-space: pre;
-			background-color: #f3f3f3;
-			padding: 0px 10px;
-			border-bottom: 1px solid #999;
-		}
-		.top {
-			overflow: hidden;
-			background-color: #333;
-			position: fixed;
-			top: 0;
-			width: 100%;
-			text-align: center;
-			z-index: 1000;
-			height: 40px;
-			margin-bottom: 20px;
-		}
-		.top a {
-			color: #EEE;
-			padding: 10px;
-			font-size: 16px;
-			line-height: 40px;
-			text-decoration: none;
-		}
-		.top a:hover {
-			background-color: #EEE;
-			color: #333;
-		}
-		.test {
-			background-color: silver;
-  			text-align: center;
-			line-height: 50px;
-			height: 50px;
-			margin-top: 0.5%;
-			font-size: 1.5rem;
-		}
-		.full {
-			width: 100%;
-			text-align: center;
-		}
-	</style>
-	<link rel="stylesheet" type="text/css" href="grimoire.min.css">
+    <title>Grimoire Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        section {
+            padding: 100px 0px;
+            border-bottom: 1px solid #999;
+        }
+        summary {
+            margin-top: 10px;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+            background-color: #f3f3f3;
+            padding: 10px;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .code {
+            font-family: "Lucida Console", Monaco, monospace;
+            white-space: pre;
+            background-color: #f3f3f3;
+            padding: 0px 10px;
+            border-bottom: 1px solid #999;
+        }
+        .top {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        .top a {
+            color: #EEE;
+            padding: 10px;
+            font-size: 16px;
+            line-height: 40px;
+            text-decoration: none;
+        }
+        .top a:hover {
+            background-color: #EEE;
+            color: #333;
+        }
+        .test {
+            background-color: silver;
+            text-align: center;
+            line-height: 50px;
+            height: 50px;
+            margin-top: 0.5%;
+            font-size: 1.5rem;
+        }
+        .full {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="grimoire.min.css">
 </head>
 <body>
-	
-	<div class="top">
-		<a href="#cover">Cover class</a>
-		<a href="#grid">Grid system</a>
-		<a href="#color">Color helpers</a>
-	</div>
+    
+    <div class="top">
+        <a href="#cover">Cover class</a>
+        <a href="#grid">Grid system</a>
+        <a href="#color">Color helpers</a>
+    </div>
 
-	<div class="container">
-		
-		<section id="cover">
-			<div class="cover is-primary">
-				<h1>Grimoire CSS</h1>
-				<p>This is an example of the "cover" class <button class="is-secondary">Start now!</button></p>
-			</div>
-			<details open>
-			<summary>See the code <strong>&lt;/&gt;</strong></summary>
-			<!-- this fixes the indentation I know it looks horrible! -->
-			<div class="code">
+    <div class="container">
+        
+        <section id="cover">
+            <div class="cover is-primary">
+                <h1>Grimoire CSS</h1>
+                <p>This is an example of the "cover" class <button class="is-secondary">Start now!</button></p>
+            </div>
+            <details open>
+            <summary>See the code <strong>&lt;/&gt;</strong></summary>
+            <!-- this fixes the indentation I know it looks horrible! -->
+            <div class="code">
 &lt;div class="cover is-primary"&gt;
     &lt;h1&gt;Grimoire CSS&lt;/h1&gt;
     &lt;p&gt;This is an example of the "cover" class &lt;button class="is-secondary">Start now!&lt;/button&gt;&lt;/p&gt;
 &lt;/div&gt;
-			</div>
-			</details>
-		</section>
+            </div>
+            </details>
+        </section>
 
-		<section id="grid">
-			<h1 class="title">Grid System</h1>
-			<h2>Columns with Small Breakpoints</h2>
+        <section id="grid">
+            <h1 class="title">Grid System</h1>
+            <h2>Columns with Small Breakpoints</h2>
 
-			<div class="row">
-				<div class="test col-s-6 is-info">col-s-6</div>
-				<div class="test col-s-6 is-info">col-s-6</div>
-			</div>
+            <div class="row">
+                <div class="test col-s-6 is-info">col-s-6</div>
+                <div class="test col-s-6 is-info">col-s-6</div>
+            </div>
 
-			<h2>Columns with Medium Breakpoints</h2>
+            <h2>Columns with Medium Breakpoints</h2>
 
-			<div class="row">
-				<div class="test col-m-4 is-primary">col-m-4</div>
-				<div class="test col-m-4 is-secondary">col-m-4</div>
-				<div class="test col-m-4 is-tertiary">col-m-4</div>
-			</div>
+            <div class="row">
+                <div class="test col-m-4 is-primary">col-m-4</div>
+                <div class="test col-m-4 is-secondary">col-m-4</div>
+                <div class="test col-m-4 is-tertiary">col-m-4</div>
+            </div>
 
-			<h2>Columns with Large Breakpoints</h2>
+            <h2>Columns with Large Breakpoints</h2>
 
-			<div class="row">
-				<div class="test col-l-3 is-dangerous">col-l-3</div>
-				<div class="test col-l-3 is-successful">col-l-3</div>
-				<div class="test col-l-3 is-caution">col-l-3</div>
-				<div class="test col-l-3 is-link">col-l-3</div>
-			</div>
+            <div class="row">
+                <div class="test col-l-3 is-dangerous">col-l-3</div>
+                <div class="test col-l-3 is-successful">col-l-3</div>
+                <div class="test col-l-3 is-caution">col-l-3</div>
+                <div class="test col-l-3 is-link">col-l-3</div>
+            </div>
 
-			<h2>Responsive columns with multiple breakpoints</h2>
+            <h2>Responsive columns with multiple breakpoints</h2>
 
-			<div class="row">
-				<div class="test col-s-6 col-m-4 col-l-3 is-light">col-s-6 col-m-4 col-l-3</div>
-				<div class="test col-s-6 col-m-4 col-l-3 is-silver">col-s-6 col-m-4 col-l-3</div>
-				<div class="test col-s-6 col-m-4 col-l-3 is-grey">col-s-6 col-m-4 col-l-3</div>
-				<div class="test col-s-6 col-m-4 col-l-3 is-dark">col-s-6 col-m-4 col-l-3</div>
-			</div>
+            <div class="row">
+                <div class="test col-s-6 col-m-4 col-l-3 is-light">col-s-6 col-m-4 col-l-3</div>
+                <div class="test col-s-6 col-m-4 col-l-3 is-silver">col-s-6 col-m-4 col-l-3</div>
+                <div class="test col-s-6 col-m-4 col-l-3 is-grey">col-s-6 col-m-4 col-l-3</div>
+                <div class="test col-s-6 col-m-4 col-l-3 is-dark">col-s-6 col-m-4 col-l-3</div>
+            </div>
 
-			<details open>
-			<summary>See the code <strong>&lt;/&gt;</strong></summary>
-			<!-- this fixes the indentation I know it looks horrible! -->
-			<div class="code">
+            <details open>
+            <summary>See the code <strong>&lt;/&gt;</strong></summary>
+            <!-- this fixes the indentation I know it looks horrible! -->
+            <div class="code">
 &lt;div class="row"&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-light"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-silver"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-grey"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-dark"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
 &lt;/div&gt;
-			</div>
-			</details>
+            </div>
+            </details>
 
-		</section>
+        </section>
 
-		<section id="color">
-			<h1  class="title">Color helpers</h1>
-			<div class="row">
-				<div class="col-s-2"><button class="is-primary full">is-primary</button></div>
-				<div class="col-s-2"><p>Patchouli Primary</p></div>
-				<div class="col-s-2"><button class="is-secondary full">is-secondary</button></div>
-				<div class="col-s-2"><p>Marisa Secondary</p></div>
-				<div class="col-s-2"><button class="is-tertiary full">is-tertiary</button></div>
-				<div class="col-s-2"><p>Satori Tertiary</p></div>
-			</div><hr>
-			<div class="row">
-				<div class="col-s-2"><button class="is-dangerous full">is-dangerous</button></div>
-				<div class="col-s-2"><p>Reimu Danger</p></div>
-				<div class="col-s-2"><button class="is-successful full">is-successful</button></div>
-				<div class="col-s-2"><p>Sanae Success</p></div>
-				<div class="col-s-2"><button class="is-caution full">is-caution</button></div>
-				<div class="col-s-2"><p>Utsuho Caution</p></div>
-			</div><hr>
-			<div class="row">
-				<div class="col-s-2"><button class="is-info full">is-info</button></div>
-				<div class="col-s-2"><p>Keine Info</p></div>
-				<div class="col-s-2"><button class="is-link full">is-link</button></div>
-				<div class="col-s-2"><p>Tenshi Link</p></div>
-			</div><hr>
-			<div class="row">
-				<div class="col-s-2"><button class="is-white full">is-white</button></div>
-				<div class="col-s-2"><p>Momiji White</p></div>
-				<div class="col-s-2"><button class="is-light full">is-light</button></div>
-				<div class="col-s-2"><p>Youmu Light Grey</p></div>
-				<div class="col-s-2"><button class="is-silver full">is-silver</button></div>
-				<div class="col-s-2"><p>Sakuya Silver</p></div>
-			</div><hr>
-			<div class="row">
-				<div class="col-s-2"><button class="is-grey full">is-grey</button></div>
-				<div class="col-s-2"><p>Nazrin Grey</p></div>
-				<div class="col-s-2"><button class="is-dark full">is-dark</button></div>
-				<div class="col-s-2"><p>Aya Dark</p></div>
-				<div class="col-s-2"><button class="is-black full">is-black</button></div>
-				<div class="col-s-2"><p>Rumia Black</p></div>
-			</div>
-		</section>
+        <section id="color">
+            <h1  class="title">Color helpers</h1>
+            <div class="row">
+                <div class="col-s-2"><button class="is-primary full">is-primary</button></div>
+                <div class="col-s-2"><p>Patchouli Primary</p></div>
+                <div class="col-s-2"><button class="is-secondary full">is-secondary</button></div>
+                <div class="col-s-2"><p>Marisa Secondary</p></div>
+                <div class="col-s-2"><button class="is-tertiary full">is-tertiary</button></div>
+                <div class="col-s-2"><p>Satori Tertiary</p></div>
+            </div><hr>
+            <div class="row">
+                <div class="col-s-2"><button class="is-dangerous full">is-dangerous</button></div>
+                <div class="col-s-2"><p>Reimu Danger</p></div>
+                <div class="col-s-2"><button class="is-successful full">is-successful</button></div>
+                <div class="col-s-2"><p>Sanae Success</p></div>
+                <div class="col-s-2"><button class="is-caution full">is-caution</button></div>
+                <div class="col-s-2"><p>Utsuho Caution</p></div>
+            </div><hr>
+            <div class="row">
+                <div class="col-s-2"><button class="is-info full">is-info</button></div>
+                <div class="col-s-2"><p>Keine Info</p></div>
+                <div class="col-s-2"><button class="is-link full">is-link</button></div>
+                <div class="col-s-2"><p>Tenshi Link</p></div>
+            </div><hr>
+            <div class="row">
+                <div class="col-s-2"><button class="is-white full">is-white</button></div>
+                <div class="col-s-2"><p>Momiji White</p></div>
+                <div class="col-s-2"><button class="is-light full">is-light</button></div>
+                <div class="col-s-2"><p>Youmu Light Grey</p></div>
+                <div class="col-s-2"><button class="is-silver full">is-silver</button></div>
+                <div class="col-s-2"><p>Sakuya Silver</p></div>
+            </div><hr>
+            <div class="row">
+                <div class="col-s-2"><button class="is-grey full">is-grey</button></div>
+                <div class="col-s-2"><p>Nazrin Grey</p></div>
+                <div class="col-s-2"><button class="is-dark full">is-dark</button></div>
+                <div class="col-s-2"><p>Aya Dark</p></div>
+                <div class="col-s-2"><button class="is-black full">is-black</button></div>
+                <div class="col-s-2"><p>Rumia Black</p></div>
+            </div>
+        </section>
 
-		<!--
-		<label>Test:</label>
-		<input type="text">
-		<input type="submit" class="is-successful">
-		<button class="is-dangerous">Cancel</button>
-		<button>Unstyled</button>
-		-->
+        <!--
+        <label>Test:</label>
+        <input type="text">
+        <input type="submit" class="is-successful">
+        <button class="is-dangerous">Cancel</button>
+        <button>Unstyled</button>
+        -->
 
-	</div>
+    </div>
 
 </body>
 </html>
