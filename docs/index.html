@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Grimoire Test</title>
+    <title>Grimoire CSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
@@ -83,6 +83,12 @@
             font-size: 1em;
             line-height: 1.8;
         }
+        h1, h2 {
+            margin: 10px 0px;
+        }
+        summary {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -93,6 +99,7 @@
     <a href="#grid">Grid system</a>
     <a href="#color">Color helpers</a>
     <a href="#forms">Form Styling</a>
+    <a href="#tables">Table Styling</a>
 </div>
 
 <!-- Main container class -->
@@ -304,6 +311,152 @@
 &lt;/form&gt;
         </code>
         </details>
+    </section>
+
+    <section id="tables">
+        <h1 class="title">Table Styling</h1>
+
+        <h2>Just add the class "table" to the table tag!</h2> 
+        <table class="table">
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Cost</th>
+                <th>Buy?</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>T-shirt</td>
+                <td>$11.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Sweatshirt</td>
+                <td>$24.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Hat</td>
+                <td>$5.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Socks</td>
+                <td>$2.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+        </table>
+
+        <h2>Add stripes with the "striped" class!</h2> 
+        <table class="table striped">
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Cost</th>
+                <th>Buy?</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>T-shirt</td>
+                <td>$11.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Sweatshirt</td>
+                <td>$24.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Hat</td>
+                <td>$5.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Socks</td>
+                <td>$2.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+        </table>
+
+        <h2>Center the content in the cells with the "centered" class!</h2> 
+        <table class="table striped centered">
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Cost</th>
+                <th>Buy?</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>T-shirt</td>
+                <td>$11.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Sweatshirt</td>
+                <td>$24.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Hat</td>
+                <td>$5.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Socks</td>
+                <td>$2.99</td>
+                <td><button class="is-link">Add to Cart</button></td>
+            </tr>
+        </table>
+
+        <details open>
+        <summary>See the code <strong>&lt;/&gt;</strong></summary>
+        <!-- this fixes the indentation I know it looks horrible! -->
+        <code class="prettyprint">
+&lt;table class="table striped centered"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Id&lt;/th&gt;
+        &lt;th&gt;Product Name&lt;/th&gt;
+        &lt;th&gt;Cost&lt;/th&gt;
+        &lt;th&gt;Buy?&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1001&lt;/td&gt;
+        &lt;td&gt;T-shirt&lt;/td&gt;
+        &lt;td&gt;$11.99&lt;/td&gt;
+        &lt;td&gt;&lt;button class="is-link"&gt;Add to Cart&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1002&lt;/td&gt;
+        &lt;td&gt;Sweatshirt&lt;/td&gt;
+        &lt;td&gt;$24.99&lt;/td&gt;
+        &lt;td&gt;&lt;button class="is-link"&gt;Add to Cart&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1003&lt;/td&gt;
+        &lt;td&gt;Hat&lt;/td&gt;
+        &lt;td&gt;$5.99&lt;/td&gt;
+        &lt;td&gt;&lt;button class="is-link"&gt;Add to Cart&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1004&lt;/td&gt;
+        &lt;td&gt;Socks&lt;/td&gt;
+        &lt;td&gt;$2.99&lt;/td&gt;
+        &lt;td&gt;&lt;button class="is-link"&gt;Add to Cart&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </code>
+        </details>
+
     </section>
 
 </div>

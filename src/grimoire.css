@@ -129,8 +129,13 @@ abbr, acronym {
 body {
     font-weight: 400;
     line-height: 1.5;
-    /*background-color: var(--light);*/
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+code, pre {
+    font-family: "Lucida Console", Monaco, monospace;
+    overflow-x: auto;
+    white-space: pre;
 }
 
 input, textarea {
@@ -174,7 +179,6 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
     min-height: 100vh;
  }
 
- /* Custom grid start */
 .row {
     width: 100%;
     max-width: var(--container);
@@ -477,4 +481,31 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
 
 .input-group > input:not(:placeholder-shown):focus + label, .input-group > textarea:not(:placeholder-shown):focus + label {
     color: var(--primary);
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    line-height: 2 !important;
+    text-align: left;
+    padding: var(--gutter);
+}
+
+.table tr {
+    border-bottom: 1px solid #999;
+}
+
+.table tr:first-child {
+    border-top: 1px solid #999;
+}
+
+.striped tr:nth-child(even) {
+    background-color: var(--light);
+}
+
+.centered td, .centered th {
+    text-align: center;
 }
