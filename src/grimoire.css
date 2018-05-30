@@ -134,8 +134,9 @@ body {
     /*background-color: var(--light);*/
 }
 
-input {
+input, textarea {
     border-radius: var(--pointyish) !important;
+    cursor: text;
 }
 
 button, input[type=submit], input[type=reset], input[type=button] {
@@ -409,3 +410,70 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
     z-index: 2;
 }
 
+.input-group {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    border-radius: 0;
+}
+
+.input-group > input::placeholder, .input-group > textarea::placeholder {
+    color: transparent;
+}
+
+.input-group > label, .input-group > input, .input-group > textarea {
+    display: block;
+    width: 100%;
+    cursor: text;
+}
+
+.input-group > label {
+    color: #777;
+    position: relative;
+    left: 0.2em;
+    top: 1.4em;
+}
+
+.input-group > input, .input-group > textarea {
+    border: 0;
+    border-bottom: 2px solid var(--silver);
+    line-height: 1.5;
+    padding: 0.2em;
+}
+
+.input-group > input:placeholder-shown:focus, .input-group > textarea:placeholder-shown:focus {
+    border-color: var(--primary);
+}
+
+.input-group > input:placeholder-shown:focus + label, .input-group > textarea:placeholder-shown:focus + label {
+    color: var(--primary);
+    animation-name: floating-label;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+    left: 0;
+    top: 0;
+}
+
+@keyframes floating-label {
+    0% {
+        left: 0.2em;
+        top: 1.4em;
+    }
+    100% {
+        left: 0;
+        top: 0;
+        color: var(--primary)
+    }
+}
+
+.input-group > input:not(:placeholder-shown) + label, .input-group > textarea:not(:placeholder-shown) + label {
+    left: 0;
+    top: 0;
+    color: #777;
+}
+
+.input-group > input:not(:placeholder-shown):focus + label, .input-group > textarea:not(:placeholder-shown):focus + label {
+    color: var(--primary);
+}

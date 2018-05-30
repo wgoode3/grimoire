@@ -25,6 +25,7 @@
             background-color: #f3f3f3;
             padding: 0px 10px;
             border-bottom: 1px solid #999;
+            overflow-x: auto;
         }
         .top {
             overflow: hidden;
@@ -69,6 +70,7 @@
         <a href="#cover">Cover class</a>
         <a href="#grid">Grid system</a>
         <a href="#color">Color helpers</a>
+        <a href="#forms">Form Styling</a>
     </div>
 
     <div class="container">
@@ -141,54 +143,105 @@
         </section>
 
         <section id="color">
-            <h1  class="title">Color helpers</h1>
+            <h1 class="title">Color helpers</h1>
             <div class="row">
-                <div class="col-s-2"><button class="is-primary full">is-primary</button></div>
-                <div class="col-s-2"><p>Patchouli Primary</p></div>
-                <div class="col-s-2"><button class="is-secondary full">is-secondary</button></div>
-                <div class="col-s-2"><p>Marisa Secondary</p></div>
-                <div class="col-s-2"><button class="is-tertiary full">is-tertiary</button></div>
-                <div class="col-s-2"><p>Satori Tertiary</p></div>
+                <div class="col-m-2"><button class="is-primary full">is-primary</button></div>
+                <div class="col-m-2"><p>Patchouli Primary</p></div>
+                <div class="col-m-2"><button class="is-secondary full">is-secondary</button></div>
+                <div class="col-m-2"><p>Marisa Secondary</p></div>
+                <div class="col-m-2"><button class="is-tertiary full">is-tertiary</button></div>
+                <div class="col-m-2"><p>Satori Tertiary</p></div>
             </div><hr>
             <div class="row">
-                <div class="col-s-2"><button class="is-dangerous full">is-dangerous</button></div>
-                <div class="col-s-2"><p>Reimu Danger</p></div>
-                <div class="col-s-2"><button class="is-successful full">is-successful</button></div>
-                <div class="col-s-2"><p>Sanae Success</p></div>
-                <div class="col-s-2"><button class="is-caution full">is-caution</button></div>
-                <div class="col-s-2"><p>Utsuho Caution</p></div>
+                <div class="col-m-2"><button class="is-dangerous full">is-dangerous</button></div>
+                <div class="col-m-2"><p>Reimu Danger</p></div>
+                <div class="col-m-2"><button class="is-successful full">is-successful</button></div>
+                <div class="col-m-2"><p>Sanae Success</p></div>
+                <div class="col-m-2"><button class="is-caution full">is-caution</button></div>
+                <div class="col-m-2"><p>Utsuho Caution</p></div>
             </div><hr>
             <div class="row">
-                <div class="col-s-2"><button class="is-info full">is-info</button></div>
-                <div class="col-s-2"><p>Keine Info</p></div>
-                <div class="col-s-2"><button class="is-link full">is-link</button></div>
-                <div class="col-s-2"><p>Tenshi Link</p></div>
+                <div class="col-m-2"><button class="is-info full">is-info</button></div>
+                <div class="col-m-2"><p>Keine Info</p></div>
+                <div class="col-m-2"><button class="is-link full">is-link</button></div>
+                <div class="col-m-2"><p>Tenshi Link</p></div>
             </div><hr>
             <div class="row">
-                <div class="col-s-2"><button class="is-white full">is-white</button></div>
-                <div class="col-s-2"><p>Momiji White</p></div>
-                <div class="col-s-2"><button class="is-light full">is-light</button></div>
-                <div class="col-s-2"><p>Youmu Light Grey</p></div>
-                <div class="col-s-2"><button class="is-silver full">is-silver</button></div>
-                <div class="col-s-2"><p>Sakuya Silver</p></div>
+                <div class="col-m-2"><button class="is-white full">is-white</button></div>
+                <div class="col-m-2"><p>Momiji White</p></div>
+                <div class="col-m-2"><button class="is-light full">is-light</button></div>
+                <div class="col-m-2"><p>Youmu Light Grey</p></div>
+                <div class="col-m-2"><button class="is-silver full">is-silver</button></div>
+                <div class="col-m-2"><p>Sakuya Silver</p></div>
             </div><hr>
             <div class="row">
-                <div class="col-s-2"><button class="is-grey full">is-grey</button></div>
-                <div class="col-s-2"><p>Nazrin Grey</p></div>
-                <div class="col-s-2"><button class="is-dark full">is-dark</button></div>
-                <div class="col-s-2"><p>Aya Dark</p></div>
-                <div class="col-s-2"><button class="is-black full">is-black</button></div>
-                <div class="col-s-2"><p>Rumia Black</p></div>
+                <div class="col-m-2"><button class="is-grey full">is-grey</button></div>
+                <div class="col-m-2"><p>Nazrin Grey</p></div>
+                <div class="col-m-2"><button class="is-dark full">is-dark</button></div>
+                <div class="col-m-2"><p>Aya Dark</p></div>
+                <div class="col-m-2"><button class="is-black full">is-black</button></div>
+                <div class="col-m-2"><p>Rumia Black</p></div>
             </div>
         </section>
 
-        <!--
-        <label>Test:</label>
-        <input type="text">
-        <input type="submit" class="is-successful">
-        <button class="is-dangerous">Cancel</button>
-        <button>Unstyled</button>
-        -->
+        <section id="forms">
+            <h1 class="title">Form Styling</h1>
+
+            <form action="#" onsubmit="return false">
+                <div class="input-group">
+                    <input type="text" name="username" id="username" placeholder="Username" />
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Description" name="description" id="description" rows=3 ></textarea>
+                    <label for="description">Description</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm" />
+                    <label for="confirm">Confirm Password</label>
+                </div>
+                <input type="submit" name="Submit" class="is-successful" onsubmit="return false" >
+            </form>
+
+            <details open>
+            <summary>See the code <strong>&lt;/&gt;</strong></summary>
+            <!-- this fixes the indentation I know it looks horrible! -->
+            <div class="code">
+&lt;form action="#"&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" name="username" id="username" placeholder="Username" /&gt;
+        &lt;label for="username"&gt;Username&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" name="email" id="email" placeholder="Email" /&gt;
+        &lt;label for="email"&gt;Email Address&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="input-group"&gt;
+        &lt;textarea placeholder="Description" name="description" id="description" rows=3 &gt;&lt;/textarea&gt;
+        &lt;label for="description"&gt;Description&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="password" name="password" id="password" placeholder="Password" /&gt;
+        &lt;label for="password"&gt;Password&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="password" name="confirm" id="confirm" placeholder="Confirm" /&gt;
+        &lt;label for="confirm"&gt;Confirm Password&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;input type="submit" name="Submit" class="is-successful" &gt;
+&lt;/form&gt;
+            </div>
+            </details>
+
+        </section>
 
     </div>
 
