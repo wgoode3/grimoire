@@ -4,28 +4,33 @@
     <title>Grimoire Test</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <style>
         section {
             padding: 100px 0px;
             border-bottom: 1px solid #999;
         }
+        details {
+            background-color: #f3f3f3;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
         summary {
             margin-top: 10px;
             border-top: 1px solid #999;
             border-bottom: 1px solid #999;
-            background-color: #f3f3f3;
             padding: 10px;
         }
         .title {
             font-size: 2rem;
         }
-        .code {
-            font-family: "Lucida Console", Monaco, monospace;
-            white-space: pre;
-            background-color: #f3f3f3;
-            padding: 0px 10px;
-            border-bottom: 1px solid #999;
+        .prettyprint {
+            outline: 0;
+            border: 0;
             overflow-x: auto;
+            white-space: pre;
+            font-family: "Lucida Console", Monaco, monospace;
+            position: relative;
+            left: 20px;
         }
         .top {
             overflow: hidden;
@@ -83,12 +88,12 @@
             <details open>
             <summary>See the code <strong>&lt;/&gt;</strong></summary>
             <!-- this fixes the indentation I know it looks horrible! -->
-            <div class="code">
+            <code class="prettyprint">
 &lt;div class="cover is-primary"&gt;
     &lt;h1&gt;Grimoire CSS&lt;/h1&gt;
     &lt;p&gt;This is an example of the "cover" class &lt;button class="is-secondary">Start now!&lt;/button&gt;&lt;/p&gt;
 &lt;/div&gt;
-            </div>
+            </code>
             </details>
         </section>
 
@@ -130,14 +135,14 @@
             <details open>
             <summary>See the code <strong>&lt;/&gt;</strong></summary>
             <!-- this fixes the indentation I know it looks horrible! -->
-            <div class="code">
+            <code class="prettyprint">
 &lt;div class="row"&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-light"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-silver"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-grey"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-dark"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
 &lt;/div&gt;
-            </div>
+            </code>
             </details>
 
         </section>
@@ -197,7 +202,7 @@
                     <label for="email">Email Address</label>
                 </div>
                 <div class="input-group">
-                    <textarea placeholder="Description" name="description" id="description" rows=3 ></textarea>
+                    <textarea name="description" id="description" placeholder="Description" rows=3 ></textarea>
                     <label for="description">Description</label>
                 </div>
                 <div class="input-group">
@@ -208,13 +213,13 @@
                     <input type="password" name="confirm" id="confirm" placeholder="Confirm" />
                     <label for="confirm">Confirm Password</label>
                 </div>
-                <input type="submit" name="Submit" class="is-successful" onsubmit="return false" >
+                <input type="submit" name="Submit" class="is-successful" onsubmit="return false" />
             </form>
 
             <details open>
             <summary>See the code <strong>&lt;/&gt;</strong></summary>
             <!-- this fixes the indentation I know it looks horrible! -->
-            <div class="code">
+            <code class="prettyprint">
 &lt;form action="#"&gt;
     &lt;div class="input-group"&gt;
         &lt;input type="text" name="username" id="username" placeholder="Username" /&gt;
@@ -225,7 +230,7 @@
         &lt;label for="email"&gt;Email Address&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="input-group"&gt;
-        &lt;textarea placeholder="Description" name="description" id="description" rows=3 &gt;&lt;/textarea&gt;
+        &lt;textarea name="description" id="description" placeholder="Description" rows=3 &gt;&lt;/textarea&gt;
         &lt;label for="description"&gt;Description&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="input-group"&gt;
@@ -236,9 +241,9 @@
         &lt;input type="password" name="confirm" id="confirm" placeholder="Confirm" /&gt;
         &lt;label for="confirm"&gt;Confirm Password&lt;/label&gt;
     &lt;/div&gt;
-    &lt;input type="submit" name="Submit" class="is-successful" &gt;
+    &lt;input type="submit" name="Submit" class="is-successful" /&gt;
 &lt;/form&gt;
-            </div>
+            </code>
             </details>
 
         </section>
