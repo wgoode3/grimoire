@@ -1,0 +1,100 @@
+section {
+    padding: 100px 0px;
+    border-bottom: 1px solid #999;
+}
+
+details {
+    background-color: #f3f3f3;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+summary {
+    margin-top: 10px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.prettyprint {
+    outline: 0;
+    border: 0;
+    overflow-x: auto;
+    white-space: pre;
+    font-family: "Lucida Console", Monaco, monospace;
+    position: relative;
+    left: 20px;
+}
+
+.top {
+    font-family: "Arial", "Helvetica", sans-serif;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 5px solid transparent;
+}
+
+.top p, .top a {
+    color: #EEE;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 40px;
+    display: inline;
+    text-decoration: none;
+}
+
+.top .active, .top a:hover {
+    border-bottom: 3px solid #EEE;
+    color: #EEE;
+}
+
+.test {
+    background-color: silver;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 0.5%;
+    font-size: 1.5rem;
+}
+
+.full {
+    width: 100%;
+    text-align: center;
+}
+
+#color p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#color > .row, #icons > .row {
+    border-bottom: 1px solid #999;
+}
+
+#color > .row:nth-child(odd), #icons > .row:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+#color .hex {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+h1, h2 {
+    margin: 10px 0px;
+}
+
+summary {
+    cursor: pointer;
+}
