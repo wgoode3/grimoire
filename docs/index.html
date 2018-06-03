@@ -4,7 +4,6 @@
     <title>Grimoire CSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" href="grimoire.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -21,6 +20,7 @@
     <a href="#icons">Icons</a>
     <a href="#spell">Spell</a>
     <a href="#talisman">Talisman</a>
+    <a href="#navbar">Navbar</a>
 </div>
 
 <!-- Main container class -->
@@ -35,12 +35,14 @@
         <details open>
         <summary>See the code <strong>&lt;/&gt;</strong></summary>
         <!-- this fixes the indentation I know it looks horrible! -->
+        <div>
         <code class="prettyprint">
 &lt;div class="cover"&gt;
     &lt;h1&gt;Grimoire CSS&lt;/h1&gt;
     &lt;p&gt;This is an example of the "cover" class &lt;button class="is-secondary">Start now!&lt;/button&gt;&lt;/p&gt;
 &lt;/div&gt;
         </code>
+        </div>
         </details>
     </section>
 
@@ -75,6 +77,7 @@
         <details open>
         <summary>See the code <strong>&lt;/&gt;</strong></summary>
         <!-- this fixes the indentation I know it looks horrible! -->
+        <div>
         <code class="prettyprint">
 &lt;div class="row"&gt;
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-light"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
@@ -83,6 +86,7 @@
     &lt;div class="test col-s-6 col-m-4 col-l-3 is-dark"&gt;col-s-6 col-m-4 col-l-3&lt;/div&gt;
 &lt;/div&gt;
         </code>
+        </div>
         </details>
     </section>
 
@@ -197,6 +201,7 @@
         <details open>
         <summary>See the code <strong>&lt;/&gt;</strong></summary>
         <!-- this fixes the indentation I know it looks horrible! -->
+        <div>
         <code class="prettyprint">
 &lt;form action="#"&gt;
     &lt;div class="input-group"&gt;
@@ -222,6 +227,7 @@
     &lt;input type="submit" name="Submit" class="is-successful"/&gt;
 &lt;/form&gt;
         </code>
+        </div>
         </details>
     </section>
 
@@ -333,6 +339,7 @@
         <details open>
         <summary>See the code <strong>&lt;/&gt;</strong></summary>
         <!-- this fixes the indentation I know it looks horrible! -->
+        <div>
         <code class="prettyprint">
 &lt;table class="table striped centered"&gt;
     &lt;tr&gt;
@@ -367,6 +374,7 @@
     &lt;/tr&gt;
 &lt;/table&gt;
         </code>
+        </div>
         </details>
 
     </section>
@@ -433,6 +441,7 @@
         <details open>
         <summary>See the code <strong>&lt;/&gt;</strong></summary>
         <!-- this fixes the indentation I know it looks horrible! -->
+        <div>
         <code class="prettyprint">
 &lt;div class="spell parchment"&gt;
     &lt;p class="initial"&gt;This is the spell class&lt;/p&gt;
@@ -441,6 +450,7 @@
     &lt;p&gt;Text should nest around the letter&lt;/p&gt;
 &lt;/div&gt;
         </code>
+        </div>
         </details>
         
     </section>
@@ -466,7 +476,82 @@
 
     </section>
 
+    <section id="navbar">
+        <h1 class="title">Navbar</h1>
+
+        <h2>Dark Navbar</h2>
+
+        <nav class="navbar nav-dark">
+            <ul class="nav-left">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Forum</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="group">
+                    <input type="search" name="search" placeholder="Search">
+                    <button class="is-link">🔍</button>
+                </li>
+                <li><button class="is-successful">Sign In</button></li>
+            </ul>
+        </nav>
+
+        <h2>Light Navbar with dropdown content</h2>
+
+        <nav class="navbar nav-light">
+            <ul class="nav-left">
+                <li><a href="#!">Dashboard</a></li>
+                <li><a href="#!">Forum</a></li>
+                <li class="dropdown">
+                    <a href="#!">User <i class="icon caret-down-d"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#!">Edit Account</a></li>
+                        <li><a href="#!">Change Password</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-right">
+                <li><button class="is-dangerous">Sign Out</button></li>
+            </ul>
+        </nav>
+
+        <details open>
+            <summary>See the code <strong>&lt;/&gt;</strong></summary>
+            <!-- this fixes the indentation I know it looks horrible! -->
+            <div>
+            <code class="prettyprint">
+&lt;nav class="navbar nav-light"&gt;
+    &lt;ul class="nav-left"&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;Forum&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a href="#!"&gt;User &lt;i class="icon caret-down-d"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class="dropdown-content"&gt;
+                &lt;li&gt;&lt;a href="#!"&gt;Edit Account&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#!"&gt;Change Password&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="nav-right"&gt;
+        &lt;li&gt;&lt;button class="is-dangerous"&gt;Sign Out&lt;/button&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </code>
+            </div>
+        </details>
+
+    </section>
+
+    <div class="footer">
+        <p><strong>Grimoire CSS</strong></p>
+        <p>A magical CSS framework unsuitable for most things yet perfect for some</p>
+        <p>Current version: v0.2</p>
+    </div> 
+
 </div>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 <script>
     console.log(`=====================================================\n\n GGGG  RRRRR  IIII MM     MM  OOOO  IIII RRRRR  EEEEE\nGG     RR  RR  II  MMM   MMM OO  OO  II  RR  RR EE\nGG GGG RRRRR   II  MMMM MMMM OO  OO  II  RRRRR  EEEEE\nGG  GG RR RR   II  MM MMM MM OO  OO  II  RR RR  EE\n GGGG  RR  RR IIII MM     MM  OOOO  IIII RR  RR EEEEE\n\n=====================================================\n\nGrimoire CSS\nhttps://github.com/wgoode3/grimoire\n\n=====================================================`);
@@ -482,4 +567,5 @@
 </script>
 
 </body>
+
 </html>

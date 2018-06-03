@@ -73,7 +73,7 @@
     --gutter: 0.2rem;
 
     /* Navbar height */
-    --nav: 40px;
+    --nav: 50px;
 
     /* Somewhat important container width*/
     --container: 1200px;
@@ -85,6 +85,10 @@
      * If you need more, that's where to get'em.
      * ========================================================
      */
+
+    /* It may be faster to load these from files rather than base64 */
+    /* http://dev.mobify.com/blog/data-uris-are-slow-on-mobile/ */
+    /* I might prefer the convenience though... */
 
     /* Parchment Texture */
     --parchment: url("data:image/gif;base64,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");
@@ -162,6 +166,7 @@ code, pre {
 input, textarea {
     border-radius: var(--pointyish) !important;
     cursor: text;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 button, input[type=submit], input[type=reset], input[type=button] {
@@ -194,7 +199,6 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
 
  /* The container class */
  .container {
-    width: 100%;
     max-width: var(--container);
     margin: 0 auto;
     min-height: 100vh;
@@ -398,14 +402,10 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
 /*
  * TODO:
  *
- * form
  * alert (with burn in effect)
- * table
  * navbar (ribbon?)
- * spell-card
  * magic-circle (with border image)
  * alchemy (media) (pinned class, )
- * talisman (chip)
  * polygonal round buttons
  * tooltips
  *
@@ -442,12 +442,13 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
 }
 
 .input-group {
-    margin: 10px 0px;
+    margin: 10px 0;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    width: 100%;
     border-radius: 0;
+    font-size: 1.2rem;
+    max-width: calc( 100% - 1px) !important;
 }
 
 .input-group > input::placeholder, .input-group > textarea::placeholder {
@@ -471,7 +472,7 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
     border: 0;
     border-bottom: 2px solid var(--silver);
     line-height: 1.5;
-    padding: 0.2em;
+    padding: 0.2em 0;
 }
 
 .input-group > input:placeholder-shown:focus, .input-group > textarea:placeholder-shown:focus {
@@ -507,6 +508,12 @@ button:active, input[type=submit]:active, input[type=reset]:active, input[type=b
 
 .input-group > input:not(:placeholder-shown):focus + label, .input-group > textarea:not(:placeholder-shown):focus + label {
     color: var(--primary);
+}
+
+/* Forces input group to not take up too much space */
+/* Something weird must be happening there */
+div.input-group {
+    max-width: calc( 100% - 0.2em) !important;
 }
 
 .table {
@@ -563,6 +570,10 @@ i.icon.star {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='210' width='500'><polygon points='100,10 40,198 190,78 10,78 160,198'/></svg>");
 }
 
+i.icon.caret-down-d {
+    background-image: url("data:image/svg+xml;utf8,<svg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z' fill='%23252527'/></svg>");
+}
+
 i.icon.x2 {
     height: 2em;
     width: 2em;
@@ -608,23 +619,18 @@ i.icon.x5 {
     writing-mode: vertical-lr !important;
     text-orientation: upright;
     cursor: default;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 25px rgba(0, 0, 0, 0.2);
     vertical-align: middle;
 }
 
 .talisman:before {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 4px;
-    right: 4px;
-    bottom: 4px;
-    border: 3px solid var(--danger);
-}
-
-.talisman span:first-child {
-    padding-bottom: 0.5em;
-    border-bottom: 3px solid var(--danger);   
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid var(--danger);
 }
 
 .initial:first-letter {
@@ -632,5 +638,99 @@ i.icon.x5 {
     line-height: 1em;
     margin: -0.05em 0.2em 0em 0em;
     float: left;
-    /*color: var(--primary);*/
 }
+
+.footer {
+    max-width: var(--container);
+    margin: 0 auto;
+    color: var(--dark);
+}
+
+.navbar {
+    width: 100%;
+    height: var(--nav);
+    line-height: var(--nav); 
+    margin-bottom: 1em;
+}
+
+.navbar p, .navbar a {
+    text-decoration: none;
+    font-size: 1.2em; 
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.navbar button {
+    height: calc(var(--nav) - 1em);
+    margin-left: 0;
+    font-size: 1.1rem; 
+}
+
+.navbar input { 
+    height: calc(var(--nav) - 1em);
+    font-size: 1.1rem;
+    border: 1px solid var(--silver);
+    padding: 0.3em 0.5em;
+    margin-right: 0;
+}
+
+/* For use with buttons or inline inputs */
+.group { border-radius: 0 !important; }
+.group > input:first-child, .group > button:first-child { border-radius: 0.2em 0 0 0.2em !important; }
+.group > input:last-child, .group > button:last-child { border-radius: 0 0.2em 0.2em 0 !important; }
+
+.navbar:before, .navbar:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.navbar ul li { 
+    display: inline; position: relative;
+    float: left; 
+}
+
+.nav-left { float: left; }
+.nav-right { float: right; }
+.nav-left li { margin-right: 1em; }
+.nav-left li:first-child { margin-left: calc(2 * var(--gutter)); }
+.nav-right li { margin-left: 1em; }
+.nav-right li:last-child { margin-right: calc(2 * var(--gutter)); }
+.nav-dark { background-color: var(--dark); }
+.nav-dark a, .nav-dark p { color: var(--light); }
+.nav-light { background-color: var(--light); }
+.nav-light a, .nav-light p { color: var(--dark); }
+.nav-light .active, .nav-light a:hover { border-bottom: 3px solid var(--dark); }
+.nav-dark .active, .nav-dark a:hover { border-bottom: 3px solid var(--light); }
+
+.dropdown .dropdown-content {  
+    background-color: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1001;
+    margin-top: -1px;
+    padding: 0.5em;
+}
+
+.dropdown-content li {
+    margin: 0 !important;
+    line-height: 1.2;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+.dropdown:hover .dropdown-content { display: block; }
+.nav-dark .dropdown-content { background-color: var(--dark); }
+.nav-dark .dropdown-content a { color: var(--light); }
+.nav-light .dropdown-content { background-color: var(--light); }
+.nav-light .dropdown-content a { color: var(--dark); }
